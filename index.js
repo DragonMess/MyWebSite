@@ -1,15 +1,3 @@
-// const gra = function(min, max) {
-//     return Math.random() * (max - min) + min;
-// };
-const init = function () {
-  // let items = document.querySelectorAll("section");
-  let items = document.getElementsByTagName("section");
-  for (let i = 0; i < items.length; i++) {
-    items[i].style.minHeight = "vh";
-    // items[i].style.background = randomColor({ luminosity: "light" });
-  }
-};
-// init();
 
 const skills = [
   { name: "HTML", percentage: "80", color: "blue" },
@@ -49,6 +37,7 @@ function createProgressBar(data) {
     progress.append(progressBar);
 
     const codeSkill = document.getElementById("codeSkills");
+
     codeSkill.appendChild(progress);
   }
 }

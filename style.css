@@ -16,6 +16,12 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
 }
+#logoImg {
+  font-size: 2em;
+  font-weight: bold;
+  /* font-family:'Permanent Marker', cursive ; */
+  color: rgb(230, 202, 45);
+}
 #title {
   animation:fade 7s ease forwards;
   font-size: 3.5em;
@@ -30,6 +36,13 @@ body {
   font-family:'Permanent Marker', cursive ;
   color: rgb(218, 136, 30);
   text-shadow: 2px 2px rgb(54, 32, 90);
+}
+#btn_txt_h3 {
+  animation:fade 10s ease forwards;
+  font-size: 2em;
+  font-family:'Permanent Marker', cursive ;
+  color: rgb(54, 32, 90);
+  text-shadow: 2px 2px white;
 }
 #home {
   padding-top: 15rem;
@@ -75,6 +88,9 @@ body {
   text-align: center;
 }
 
+#codeSkills {
+  width: auto;
+}
 
 h2 {
   position: fixed;
@@ -85,27 +101,65 @@ h2 {
   
 
 }
-
+/* == MyWork ==  */
+#myWork_title{
+  padding-top: 12vh;
+}
 #myWork {
   padding-top: 6rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
    rgba(0, 0, 0, 0.5)),
     url(img/space.png); 
     background-size: cover;
-  background-position: center;
+  background-position: center; */
   height: 500vh;
   width: 100%;
   
   align-content: center;
 }
-.card {
-  max-width: 90vh;
+.cardCap {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(228, 228, 228);
+
+  /* background-clip: border-box; */
+  border: .25rem solid black;
+  border-radius: 5px;
+  max-width: 45%;
   margin-bottom: 3vh;
   margin-left: auto;
   margin-right: auto;
 }
-.card-custom{
-  background-color: gray;
+#card-custom{
+  background-color: rgb(243, 241, 241);
+  text-align: center;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+.imageCarrousel{
+  width: 100%;
+  display:block;
+  /* vertical-align:middle; */
+  border:none;
+
+}
+
+.customCard{
+  height: 50vh;
+}
+
+hr{
+  border: 10px solid green;
+  border-radius: 5px;
 }
 
 li {
@@ -121,6 +175,8 @@ li {
   font-family:'Ubuntu Condensed', sans-serif;
   color: #699BFF;
   background-color: black;
+
+
   /* text-shadow: 2px 2px rgb(54, 32, 90); */
 }
 
@@ -165,5 +221,12 @@ li {
   }
   to{
     opacity: 1;
+  }
+}
+/* == Font size responsive ==  */
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 55%;
   }
 }
